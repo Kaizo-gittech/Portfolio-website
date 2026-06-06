@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>About Me | KaiTech</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    
+    <style>
+
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Space Grotesk',sans-serif;
+}
+
+body{
+    background:#0a1128;
+    color:white;
+}
+
+body::before{
+    content:'';
+    position:fixed;
+    inset:0;
+    background:
+    radial-gradient(circle at top left,
+    rgba(255,255,255,.08),
+    transparent 35%),
+    radial-gradient(circle at bottom right,
+    rgba(255,255,255,.06),
+    transparent 35%);
+    z-index:-1;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:1rem 2rem;
+    flex-wrap:wrap;
+    position:sticky;
+    top:0;
+    background:rgba(255,255,255,.05);
+    backdrop-filter:blur(15px);
+    border-bottom:1px solid rgba(255,255,255,.08);
+    z-index:1000;
+}
+
+.brand{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.hero-image img{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    object-fit:cover;
+    border:3px solid #60a5fa;
+}
+
+.logo{
+    font-size:clamp(22px,3vw,32px);
+    font-weight:700;
+    color:#60a5fa;
+}
+
+nav ul{
+    display:flex;
+    gap:15px;
+    list-style:none;
+    flex-wrap:wrap;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#60a5fa;
+}
+
+.p1{
+    font-size: medium;
+}
+
+.brand{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.hero-image img{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    object-fit:cover;
+    border:3px solid #60a5fa;
+}
+
+.hero{
+    text-align:center;
+    padding:80px 10%;
+}
+
+.hero h1{
+    font-size:60px;
+    color:#60a5fa;
+    margin-bottom:15px;
+}
+
+.hero p{
+    color:#cbd5e1;
+    font-size: clamp(18px, 2vw, 24px );
+}
+
+section{
+    padding:50px 10%;
+}
+
+.title{
+    margin-bottom:25px;
+    color:#60a5fa;
+}
+
+        .buttons{
+            display:flex;
+            gap:15px;
+            
+        }
+
+        .btn{
+            text-decoration:none;
+            color:white;
+            background:#60a5fa;
+            padding:12px 25px;
+            border-radius:30px;
+            transition:.3s;
+            gap: 10px;
+
+        }
+
+        .btn:hover{
+            transform:translateY(-5px);
+        }
+
+        .hero-image img{
+            width:80px;
+            height:80px;
+            border-radius:50%;
+            object-fit:cover;
+            border:3px solid #60a5fa;
+        }
+
+        section{
+            padding:80px 10%;
+        }
+
+        .title{
+            text-align:left;
+            font-size:40px;
+            margin-bottom:50px;
+            color:#60a5fa;
+        }
+        p{
+        font-size:x-large;
+        }
+        
+        section ul li{
+            font-size: large;
+            color: #cbd5e1;
+            
+        }
+        section ul{
+            background:rgba(255,255,255,0.05);
+            backdrop-filter:blur(10px);
+            border:1px solid rgba(255, 255, 255, 0.659);
+            border-radius:20px;
+            padding:25px;
+        }
+
+        .grid{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:25px;
+        }
+        
+       .box{
+            background:rgba(255,255,255,0.05);
+            backdrop-filter:blur(10px);
+            border:1px solid rgba(255, 255, 255, 0.659);
+            border-radius:20px;
+            padding:25px;
+        }
+
+        .box h3{
+            margin-bottom:15px;
+            color:#60a5fa;
+        }
+
+        .box p{
+            color:#cbd5e1;
+            line-height:1.7;
+        }
+
+        footer{
+            text-align:center;
+            padding:25px;
+            margin-top:30px;
+            background:rgba(255,255,255,0.05);
+            color:#cbd5e1;
+        }
+
+        @media (max-width: 768px){
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .logo{
+        font-size:24px;
+        right:0;
+    }
+
+    nav ul{
+        justify-content:center;
+        gap:12px;
+    }
+
+    nav ul li a{
+        font-size:14px;
+    }
+
+    section{
+        padding:60px 5%;
+    }
+
+    .title{
+        text-align:center;
+        font-size:32px;
+    }
+
+    .brand{
+        justify-content: center;
+    }
+
+    .hero h1{
+        font-size: 40px;
+    }
+
+    .hero-text h1{
+        font-size:42px;
+    }
+
+    .hero-text h3{
+        font-size:20px;
+    }
+
+    .hero-text p{
+        font-size:16px;
+    }
+
+    .buttons{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    .btn{
+        padding:10px 20px;
+        font-size:14px;
+    }
+
+    .hero-image img{
+        width: 65px;
+        height:65px;
+    }
+
+    .stats{
+        justify-content:center;
+    }
+
+    .stat-card{
+        width:100%;
+        max-width:250px;
+    }
+
+    .skills{
+        gap:15px;
+    }
+
+    .skill{
+        width:100px;
+    }
+
+    .skill i{
+        font-size:1.8rem;
+    }
+
+    .box{
+        padding:20px;
+    }
+
+    p{
+        font-size:18px;
+    }
+
+    section ul li{
+        font-size:16px;
+    }
+}
+
+
+.tooltip{
+    position: absolute;
+    bottom: -90px;
+    left: 50%;
+    transform: translateY(-50%);
+    width: 220px;
+    background:#111827;
+    color: white;
+    padding: 12px;
+    border-radius:10px;
+    font-size: 14px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    z-index: 100;
+}
+
+.stat-card:hover .tooltip{
+    opacity: 1;
+    visibility: visible;
+}
+
+.sec-header{
+    margin: 40px 0 25px;
+    color: #60a5fa;
+    font-size: 28px;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:center;
+    margin-bottom:40px;
+}
+
+.skill{
+    width:120px;
+    padding:20px;
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:15px;
+    text-align:center;
+    transition:.3s;
+}
+
+.skill:hover{
+    transform:translateY(-5px);
+    border-color:#60a5fa;
+}
+
+.skill img{
+    width:40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.skill i{
+    font-size: 2rem;
+    color: #60a5fa;
+    margin-bottom: 10px;
+}
+.skill span{
+    display:block;
+    margin-top:10px;
+    font-size:14px;
+    font-weight:500;
+    text-align:center;
+    line-height:1.4;
+}
+    </style>
+</head>
+
+<body>
+
+    <nav> 
+        <div class="brand">
+            <div class="hero-image">
+                <img src="Dp.jpg" alt="Kabir Thapa">
+            </div>
+            <div class="logo">KaiTech</div>
+        </div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section>
+        <h2 class="title">About Me</h2>
+        <div class="box">  
+            <p>
+                Hello! I'm <strong>Kabir Thapa</strong>
+                <BR>
+                BCA student <br>
+                Aspiring Full Stack Developer who is passionate about technology, programming, and web development.
+                Currently, I am learning Full Stack Development and building projects to strengthen my skills in frontend and backend technologies. I enjoy creating responsive websites, solving programming problems, and continuously exploring new tools and technologies.<br>
+            </p>
+            <br>
+        <ul>
+            <p>Quick Stats:</p>
+            <li>🎓 BCA Student</li>
+            <li>💻 Full Stack Development</li>
+            <li>📚 Building personal projects</li>
+            <li>🚀 Aspiring AI Engineer</li>
+            
+        </ul><br><br>
+
+        <h2 class="sec-heading">Technologies That I Work With :</h2><br>
+        
+        <div class="skills">
+
+            <div class="skill">
+                <img src="css.svg" alt="CSS">
+                <span>CSS</span>
+            </div>
+            <div class="skill">
+                <img src="html5-brands-solid-full.svg" alt="HTML">
+                <span>HTML</span>
+            </div>
+            <div class="skill">
+                 <img src="js-brands-solid-full.svg" alt="JS">
+                <span>JavaScript</span>
+            </div>
+            <div class="skill">
+                <img src="python-brands-solid-full.svg" alt="Python">
+                <span>Python</span>
+            </div>
+            <div class="skill">
+                <img src="github-brands-solid-full.svg" alt="GitHub">
+                <span>GitHub</span>
+            </div>
+            <div class="skill">
+                <img src="database-solid-full.svg" alt="Database">
+                <span>Database</span>
+            </div>
+
+        <p>
+            I believe in continuous learning and improving through hands-on practice. Every project I build helps me learn something new and move closer to my goal of becoming a professional developer. <br> <br>
+        </p>
+        <div class="project-buttons">
+            <h2 class="sec-heading">My Goal</h2><br>
+            
+            <div class="box">
+                <p>
+                    My goal is to become a skilled Full Stack Developer,
+                    build impactful web applications, and continue learning
+                    modern technologies such as Artificial Intelligence,
+                    Cloud Computing, and Software Engineering.
+                </p>
+
+            </div><br>
+
+            <p>
+                Browse my GitHub repositories and explore the projects
+                I have built while learning Full Stack Development.
+            </p><br>
+
+        <div class="buttons">
+            <a href="https://github.com/Kaizo-gittech" target="_blank" class="btn">GitHub Profile</a>
+            <a href="projects.html" class="btn">View Projects</a>
+        </div>
+    </div>
+</section>
+</div>
+
+    <footer>
+        <p  class="p1">2026 Kabir Thapa | Aspiring Full Stack Developer</p>
+    </footer>
+
+</body>
+
+</html>

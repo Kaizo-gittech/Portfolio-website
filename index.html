@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Kabir Thapa | Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Space Grotesk',sans-serif;
+            scroll-behavior:smooth;
+        }
+
+        body{
+            background:#0a1128;
+            color:white;
+            overflow-x:hidden;
+        }
+
+        body::before{
+            content:'';
+            position:fixed;
+            inset:0;
+            background:
+            radial-gradient(circle at top left,
+            rgba(255,255,255,.08),
+            transparent 35%),
+            radial-gradient(circle at bottom right,
+            rgba(255,255,255,.06),
+            transparent 35%);
+            z-index:-1;
+        }
+
+        nav{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:1rem 2rem;
+            position:sticky;
+            top:0;
+            flex-wrap:wrap;
+            background:rgba(255,255,255,.05);
+            backdrop-filter:blur(15px);
+            border-bottom:1px solid rgba(255,255,255,.08);
+            z-index:1000;
+        }
+
+        .brand{
+            display:flex;
+            align-items:center;
+            gap:15px;
+        }
+
+        .hero-image-nav img{
+            width:80px;
+            height:80px;
+            object-fit:cover;
+            border-radius:50%;
+            border:3px solid #60a5fa;
+        }
+
+        .logo{
+            font-size:clamp(22px,3vw,32px);
+            font-weight:700;
+            color:#60a5fa;
+            letter-spacing:1px;
+        }
+
+        nav ul{
+            display:flex;
+            flex-wrap:wrap;
+            list-style:none;
+            gap:15px;
+        }
+
+        nav ul li a{
+            text-decoration:none;
+            color:white;
+            transition:.3s;
+            font-size:18px;
+        }
+
+        nav ul li a:hover{
+            color:#60a5fa;
+        }
+
+        .hero{
+            min-height:90vh;
+            display:flex;
+            justify-content:space-around;
+            align-items:center;
+            padding:50px 10%;
+            gap:50px;
+        }
+
+        .hero-text{
+            max-width:600px;
+        }
+
+        .hero-text h3{
+            font-size:24px;
+            color:#cbd5e1;
+            margin-bottom:10px;
+        }
+
+        .hero-text h1{
+            font-size:65px;
+            color:#60a5fa;
+            margin-bottom:20px;
+        }
+
+        .hero-text p{
+            color:#cbd5e1;
+            line-height:1.8;
+            margin-bottom:25px;
+            font-size: 22px;
+        }
+
+        .hero-image img{
+            width:320px;
+            height:320px;
+            object-fit:cover;
+            border-radius:50%;
+            border:4px solid #60a5fa;
+        }
+
+        section{
+            padding:80px 10%;
+        }
+
+        .title{
+            text-align:center;
+            font-size:40px;
+            margin-bottom:50px;
+            color:#60a5fa;
+        }
+
+        .grid{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:25px;
+        }
+
+        .box{
+            background:rgba(255,255,255,.05);
+            backdrop-filter:blur(10px);
+            border:1px solid rgba(255,255,255,.15);
+            border-radius:20px;
+            padding:25px;
+            transition:.3s;
+        }
+
+        .box:hover{
+            transform:translateY(-5px);
+            border-color:#60a5fa;
+        }
+
+        .box h3{
+            margin-bottom:15px;
+            color:#60a5fa;
+        }
+
+        .box p{
+            color:#cbd5e1;
+            line-height:1.7;
+        }
+
+        footer{
+            text-align:center;
+            padding:25px;
+            margin-top:30px;
+            background:rgba(255,255,255,.05);
+            color:#cbd5e1;
+        }
+
+        @media(max-width:768px){
+
+            nav{
+                flex-direction:column;
+                gap:15px;
+            }
+
+            .brand{
+                justify-content:center;
+            }
+
+            .hero-image-nav img{
+                width:65px;
+                height:65px;
+            }
+
+            nav ul{
+                justify-content:center;
+                gap:12px;
+            }
+
+            nav ul li a{
+                font-size:14px;
+            }
+
+            .hero{
+                flex-direction:column-reverse;
+                text-align:center;
+            }
+
+            .hero-text h1{
+                font-size:45px;
+            }
+
+            p{
+                font-size: 22px, 3vw, 20px;
+            }
+
+            .buttons{
+                justify-content:center;
+            }
+
+            .hero-image img{
+                width:200px;
+                height:200px;
+            }
+
+            section{
+                padding:60px 5%;
+            }
+
+            .title{
+                font-size:32px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="brand">
+
+            <div class="hero-image-nav">
+                <img src="Dp.jpg" alt="Kabir Thapa">
+            </div>
+
+            <div class="logo">KaiTech</div>
+
+        </div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <h3>Hello, I'm</h3>
+
+            <h1>Kabir Thapa</h1>
+
+            <p>
+                Aspiring Full Stack Developer passionate about building
+                responsive and user-friendly web applications.
+
+                I enjoy transforming ideas into functional websites using
+                HTML, CSS, JavaScript and modern web technologies.
+
+                Currently expanding my skills in frontend and backend
+                development while actively working on personal projects.
+            </p>
+
+        </div>
+
+        <div class="hero-image">
+            <img src="Dp.jpg" alt="Kabir Thapa">
+        </div>
+
+    </section>
+
+    <section>
+
+        <h2 class="title">Quick Overview</h2>
+
+        <div class="grid">
+
+            <div class="box">
+                <h3>🎓 BCA Student</h3>
+                <p>
+                    Currently pursuing BCA and strengthening my knowledge
+                    in software development, databases, and web technologies.
+                </p>
+            </div>
+
+            <div class="box">
+                <h3>💻 Web Development</h3>
+                <p>
+                    Building responsive websites using HTML, CSS,
+                    JavaScript and learning modern development practices.
+                </p>
+            </div>
+
+            <div class="box">
+                <h3>🚀 Future Goal</h3>
+                <p>
+                    To become a skilled Full Stack Developer and contribute
+                    to real-world software projects.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <p>2026 Kabir Thapa | Aspiring Full Stack Developer</p>
+    </footer>
+
+</body>
+
+</html>

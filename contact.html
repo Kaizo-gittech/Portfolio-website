@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <title>Contact | KaiTech</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+<style>
+
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Space Grotesk',sans-serif;
+}
+
+body{
+    background:#0a1128;
+    color:white;
+    overflow-x:hidden;
+}
+
+body::before{
+    content:'';
+    position:fixed;
+    inset:0;
+    background:
+    radial-gradient(circle at top left,
+    rgba(255,255,255,.08),
+    transparent 35%),
+    radial-gradient(circle at bottom right,
+    rgba(255,255,255,.06),
+    transparent 35%);
+    z-index:-1;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:1rem 2rem;
+    flex-wrap:wrap;
+    position:sticky;
+    top:0;
+    background:rgba(255,255,255,.05);
+    backdrop-filter:blur(15px);
+    border-bottom:1px solid rgba(255,255,255,.08);
+    z-index:1000;
+}
+
+.brand{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.hero-image img{
+    width:80px;
+    height:80px;
+    object-fit:cover;
+    border-radius:50%;
+    border:3px solid #60a5fa;
+}
+
+.logo{
+    font-size:clamp(22px,3vw,32px);
+    font-weight:700;
+    color:#60a5fa;
+}
+
+nav ul{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    list-style:none;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#60a5fa;
+}
+
+.contact-section{
+    padding:80px 10%;
+}
+
+.title{
+    text-align:center;
+    font-size:50px;
+    color:#60a5fa;
+    margin-bottom:15px;
+}
+
+.subtitle{
+    text-align:center;
+    color:#cbd5e1;
+    margin-bottom:50px;
+    font-size: clamp(22px, 2vw, 23px);
+}
+
+.contact-container{
+    display:grid;
+    grid-template-columns:1fr 1.5fr;
+    gap:30px;
+}
+
+.box{
+    background:rgba(255,255,255,.05);
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:20px;
+    padding:30px;
+}
+
+.contact-info h2,
+.contact-form h2{
+    color:#60a5fa;
+    margin-bottom:20px;
+}
+
+.info-item{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:20px;
+}
+
+.info-item span{
+    font-size:1.5rem;
+}
+
+.info-item p{
+    color:#cbd5e1;
+}
+
+.contact-form form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:15px;
+    border:none;
+    outline:none;
+    border-radius:12px;
+    background:#1e293b;
+    color:white;
+}
+
+.contact-form textarea{
+    resize:none;
+}
+
+.btn{
+    background:#60a5fa;
+    color:white;
+    border:none;
+    padding:14px;
+    border-radius:30px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+}
+
+.social-section{
+    text-align:center;
+    margin-top:60px;
+}
+
+.social-section h2{
+    color:#60a5fa;
+    margin-bottom:20px;
+}
+
+.social-links{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.social-links a{
+    text-decoration:none;
+    color:white;
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.15);
+    padding:12px 20px;
+    border-radius:30px;
+    transition:.3s;
+}
+
+.social-links a:hover{
+    border-color:#60a5fa;
+    color:#60a5fa;
+}
+
+
+footer{
+    text-align:center;
+    padding:25px;
+    margin-top:50px;
+    background:rgba(255,255,255,.05);
+    color:#cbd5e1;
+}
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .hero-image img{
+        width:65px;
+        height:65px;
+    }
+
+    nav ul li a{
+        font-size:14px;
+    }
+
+    .contact-section{
+        padding:60px 5%;
+    }
+
+    .title{
+        font-size:38px;
+    }
+
+    .contact-container{
+        grid-template-columns:1fr;
+    }
+
+    .box{
+        padding:20px;
+    }
+}
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="brand">
+            <div class="hero-image">
+                <img src="Dp.jpg" alt="Kabir Thapa">
+            </div>
+
+            <div class="logo">KaiTech</div>
+        </div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="contact-section">
+
+        <h1 class="title">Contact Me</h1>
+
+        <p class="subtitle">
+            Let's connect and discuss projects, opportunities, or technology.
+        </p>
+
+        <div class="contact-container">
+
+            <div class="contact-info box">
+
+                <h2>Get In Touch</h2>
+
+                <div class="info-item">
+                    <span>📧</span>
+                    <p>kaitech123345@gmail.com</p>
+                </div>
+
+                <div class="info-item">
+                    <span>📱</span>
+                    <p>+91 00000 42341</p>
+                </div>
+
+                <div class="info-item">
+                    <span>📍</span>
+                    <p>India, West Bengal</p>
+                </div>
+
+                <div class="info-item">
+                    <span>🎓</span>
+                    <p>BCA Student & Aspiring Full Stack Developer</p>
+                </div>
+
+            </div>
+
+            <div class="contact-form box">
+
+                <h2>Send Message</h2>
+
+                <form>
+
+                    <input type="text"
+                        placeholder="Your Name"
+                        required>
+
+                    <input type="email"
+                        placeholder="Your Email"
+                        required>
+
+                    <textarea
+                        rows="6"
+                        placeholder="Your Message"></textarea>
+
+                    <button type="submit" class="btn">
+                        Send Message
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <div class="social-section">
+
+            <h2>Connect With Me</h2>
+
+            <div class="social-links">
+
+                <a href="https://github.com/Kaizo-gittech" target="_blank">
+                    GitHub
+                </a>
+
+                <a href="https://www.linkedin.com/in/kabir-thapa-9ba74b3bb/?isSelfProfile=true" target="_blank">
+                    LinkedIn
+                </a>
+
+                <a href="https://www.instagram.com/" target="_blank">
+                    Instagram
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <p>2026 Kabir Thapa | Aspiring Full Stack Developer</p>
+    </footer>
+
+</body>
+
+</html>
